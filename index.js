@@ -3,7 +3,7 @@ require('dotenv').config();
 const express = require("express");
 const mongodb = require('mongodb');
 
-const port = process.env.port || 4001
+const port = process.env.PORT || 4001
 const app = express();
 const mongoclient = mongodb.MongoClient
 const objectid = mongodb.ObjectID;
